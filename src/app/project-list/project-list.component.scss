@@ -1,0 +1,42 @@
+.works {
+  display: flex;
+  min-height: fit-content;
+  padding-bottom: 18px;
+  align-items: center;
+  flex-flow: column;
+}
+
+#works-title {
+  color: #333;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.work {
+  display: flex;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  padding: 0 40px;
+  margin-top: 22px;
+  align-items: center;
+  flex-flow: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.work, .work:visited {
+  color: #333;
+}
+
+.work .name {
+  text-shadow: 1px 1px #ddd;
+}
+
+.work img {
+  max-width: 50px;
+  margin-right: 24px;
+}
+
+#tineep img, #espot img {
+  width: 46px;
+}

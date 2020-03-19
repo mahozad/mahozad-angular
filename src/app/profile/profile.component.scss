@@ -1,0 +1,23 @@
+#profile {
+  display: flex;
+  width: 490px;
+  background: #eee;
+  padding: 15px 2px 15px 18px;
+  align-items: center;
+  flex-flow: row;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 100px;
+
+  #full-name {
+    color: #292929;
+    font-size: 36px;
+    text-shadow: 0 1px #aaa;
+  }
+
+  #avatar {
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px #aaa;
+  }
+}
+
