@@ -2,28 +2,28 @@
   width: 160px;
   background: #eee;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-block-end: 10px;
   text-align: center;
   border: 1px solid rgb(204, 204, 204);
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px; // TODO: Replace with border-start-end-radius when major browsers start supporting it
+  border-bottom-right-radius: 100px; // TODO: Replace with border-end-end-radius when major browsers start supporting it
 }
 
 .song {
   display: flex;
   height: 60px;
   background: #eee;
-  padding-top: 8px;
-  padding-right: 30px;
-  padding-bottom: 8px;
-  margin-top: 20px;
+  padding-block-start: 8px;
+  padding-inline-end: 30px;
+  padding-block-end: 8px;
+  margin-block-start: 20px;
   align-items: center;
   flex-flow: row;
   justify-content: space-between;
   transition: 300ms;
   transform: translateX(-300px);
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px; // TODO: Replace with border-start-end-radius when major browsers start supporting it
+  border-bottom-right-radius: 100px; // TODO: Replace with border-end-end-radius when major browsers start supporting it
 
   &:hover {
     transform: translateX(0px);
@@ -39,13 +39,13 @@
   img {
     width: 50px;
     height: 50px;
-    margin-left: 20px;
+    margin-inline-start: 20px;
     border-radius: 4px;
   }
 
   .name {
     font-size: 12px;
-    margin-top: 4px;
+    margin-block-start: 4px;
     text-align: center;
   }
 }

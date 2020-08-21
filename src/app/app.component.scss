@@ -9,13 +9,13 @@ main {
 }
 
 app-profile {
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 app-honor-list {
   display: flex;
   width: 96%;
-  margin-top: 16px;
+  margin-block-start: 16px;
   align-items: center;
   flex-flow: row;
   justify-content: space-between;
@@ -25,7 +25,7 @@ app-social-link-list {
   display: flex;
   width: 96%;
   background: #eee;
-  margin-top: 16px;
+  margin-block-start: 16px;
   align-items: center;
   flex-flow: row;
   justify-content: space-around;
@@ -36,13 +36,13 @@ app-social-link-list {
 app-project-list {
   display: flex;
   background: #eee;
-  margin-top: 12px;
+  margin-block-start: 16px;
   align-items: center;
   flex: 1 1 auto;
   flex-flow: column;
   border: 1px solid rgb(204, 204, 204);
-  border-top-left-radius: 75px;
-  border-top-right-radius: 75px;
+  border-top-left-radius: 75px; // TODO: Replace with border-start-start-radius when major browsers start supporting it
+  border-top-right-radius: 75px; // TODO: Replace with border-start-end-radius when major browsers start supporting it
 }
 
 app-favorite-song-list, app-favorite-book-list {
@@ -50,22 +50,22 @@ app-favorite-song-list, app-favorite-book-list {
   width: auto;
   height: auto;
   position: fixed;
-  bottom: 50%;
+  bottom: 50%; // TODO: Replace with inset-block-end when major browsers start supporting it
   flex-flow: column;
   transform: translate(0%, 50%); /* To center vertically */
 }
 
 app-favorite-song-list {
-  left: 0;
+  left: 0; // TODO: Replace with inset-inline-start when major browsers start supporting it
   align-items: flex-start;
 }
 
 app-favorite-book-list {
-  right: 0;
+  right: 0; // TODO: Replace with inset-inline-end when major browsers start supporting it
   align-items: flex-end;
 }
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: 0; // TODO: Replace with inset-block-end when major browsers start supporting it
 }
