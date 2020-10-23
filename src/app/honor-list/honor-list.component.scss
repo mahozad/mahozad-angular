@@ -6,6 +6,24 @@
   width: 208px;
 }
 
+#stackoverflow-stats a {
+  height: 0;
+}
+
+#github-stats a {
+  width: 208px;
+  background: #eee;
+  border: solid 1px #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#github-mark {
+  margin-inline-start: 4px;
+}
+
 #arc-left {
   display: inline-block;
   position: relative;
